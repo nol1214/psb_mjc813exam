@@ -55,7 +55,7 @@ const planets = ["수성", "금성", "지구", "화성", "목성", "토성", "�
 let strInput = prompt("입력하세요");
 let input = parseInt(strInput);
 console.log(planets[input - 1]);
-*/
+
 
 const readline = require("readline");
 
@@ -79,3 +79,15 @@ rl.question("(1~8) : ", function (input) {
 });
 
 
+const readline = require("readline");
+
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout,
+});
+
+rl.question("문장을 입력하세요: ", function (input) {
+    const reversed = input.split("").reverse().join("");
+    console.log("출력:", reversed);
+    rl.close();
+});*/
