@@ -7,7 +7,6 @@ public class chapter0403 {
                 sum += i;
             }
         }
-
         System.out.println("1부터 100까지의 3의 배수의 총합: " + sum);
     }
 }
