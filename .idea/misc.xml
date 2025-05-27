@@ -7,11 +7,13 @@
         <option value="$PROJECT_DIR$/mavenJUnit/pom.xml" />
         <option value="$PROJECT_DIR$/calculator/pom.xml" />
         <option value="$PROJECT_DIR$/mavencalculator/pom.xml" />
+        <option value="$PROJECT_DIR$/EmailSend/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/calculator/pom.xml" />
+        <option value="$PROJECT_DIR$/mavencalculator/Emailsend/pom.xml" />
       </set>
     </option>
   </component>

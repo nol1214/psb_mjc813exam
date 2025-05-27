@@ -7,11 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="mavenJUnit" />
-        <module name="mavencalculator" />
+        <module name="EmailSend" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="calculator-lib" target="1.8" />
+      <module name="Emailsend" target="21" />
     </bytecodeTargetLevel>
   </component>
 </project>
