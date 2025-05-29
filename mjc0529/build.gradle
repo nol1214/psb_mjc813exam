@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+
+repositories {
+    mavenCentral()
+    flatDir {
+        dirs 'C:/GitHub/psb_mjc813exam/mjc_exam_lib/1.0.0.1'
+    }
+
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    implementation name: 'mjc_exam_lib-1.0.0.1'
+}
+
+test {
+    useJUnitPlatform()
+}
