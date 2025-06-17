@@ -2,7 +2,7 @@ package mjc0616;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Board{
+/*public class Board{
     private String title;
     private String content;
 
@@ -29,4 +29,4 @@ public class BoardDao {
         list.add(new Board("과제", "과제입니다."));
         return list;
     }
-}
+}*/

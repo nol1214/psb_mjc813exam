@@ -3,7 +3,7 @@ package mjc0616;
 import java.util.HashSet;
 import java.util.Set;
 
-public class mjc061602 {
+/*public class mjc061602 {
     public static void main(String[] args) {
         Set<Student> set = new HashSet<Student>();
 
@@ -37,4 +37,4 @@ public class Student{
         Student other = (Student) obj;
         return this.Studentnum == other.Studentnum;
     }
-}
+*
