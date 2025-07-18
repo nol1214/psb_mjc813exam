@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>구구단 - Thymeleaf</title>
+</head>
+<body>
+<h2 th:text="${intro}"></h2>
+
+<form action="/" method="get">
+  <label>구구단 (1~9): </label>
+  <input type="number" name="gugudan" min="1" max="9">
+  <button type="submit">출력</button>
+</form>
+
+<div th:if="${gugudanList != null}">
+  <h3>구구단 결과:</h3>
+  <ul>
+    <li th:each="line : ${gugudanList}" th:text="${line}"></li>
+  </ul>
+</div>
+</body>
+</html>

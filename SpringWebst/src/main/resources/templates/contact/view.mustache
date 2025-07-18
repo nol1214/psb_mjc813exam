@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>연락처 수정</title>
+</head>
+<body>
+<h1>연락처 수정</h1>
+{{#dto}}
+<form id="updateForm" name="updateForm" method="post" action="./update">
+    <label>ID</label>
+    <input type="text" id="id" name="id" value="{{id}}" readonly/>
+    <label>이름</label>
+    <input type="text" id="name" name="name" value="{{name}}" maxlength=""/>
+    <label>전화번호</label>
+    <input type="text" id="phoneNumber" name="phoneNumber" value="{{phoneNumber}}" maxlength=""/>
+    <span>우편번호</span>
+    <input type="text" id="zipNumber" name="zipNumber" value="{{zipNumber}}" maxlength=""/>
+    <span>이메일</span>
+    <input type="text" id="email" name="email" value="{{email}}" maxlength=""/>
+    <input type="submit" value="확인" />
+</form>
+{{/dto}}
+</body>
+</html>

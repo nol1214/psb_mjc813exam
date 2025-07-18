@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>회원정보 등록</title>
+</head>
+<body>
+<h1>등록 화면</h1>
+<form id="formInput" name="formInput" method="post" action="./addconfirm">
+
+  <label for="userId">아이디</label>
+  <input type="text" id="userId" name="userId" value="" maxlength="30" />
+
+  <label for="password">비밀번호 입력</label>
+  <input type="text" id="password" name="password" value="" maxlength="30" />
+
+  <label for="nickName">닉네임</label>
+  <input type="text" id="nickName" name="nickName" value="" maxlength="5" />
+
+  <label for="name">이름</label>
+  <input type="text" id="name" name="name" value="" maxlength="200" />
+
+  <input type="submit" value="확인" />
+</form>
+</body>
+</html>

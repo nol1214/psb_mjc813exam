@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>본인 소개</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+<h1>본인 소개</h1>
+<p th:text="${intro}"></p>
+
+<h3>현재 시간:</h3>
+<p th:text="${currentTime}"></p>
+
+<hr/>
+
+<h3>구구단 출력</h3>
+<form action="/" method="get">
+    <label for="gugudan">구구단 (1~9):</label>
+    <input type="number" id="gugudan" name="gugudan" min="1" max="9"/>
+    <button type="submit">출력</button>
+</form>
+
+<div th:if="${gugudanResult != null}">
+    <p th:utext="${gugudanResult}"></p>
+</div>
+</body>
+</html>

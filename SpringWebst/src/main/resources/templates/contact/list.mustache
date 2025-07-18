@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>연락처 목록</title>
+</head>
+<body>
+<h1>연락처 목록</h1>
+<ul>
+    {{#contacts}}
+    <a href="./view?id={{id}}">
+        <li>
+            <div>{{id}}</div>
+            <div>{{name}}</div>
+            <div>{{phoneNumber}}</div>
+            <div>{{zipNumber}}</div>
+            <div>{{email}}</div>
+        </li>
+    </a>
+    {{/contacts}}
+</ul>
+</body>
+</html>

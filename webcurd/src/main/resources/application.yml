@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: webcurd_db
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: webuser
+    password: 1234
+    url: jdbc:mysql://localhost:3306/webcurd_db?useSSL=false&serverTimezone=Asia/Seoul
+  mustache:
+    suffix: .html
+  #server:
+ # port: 18080
+  #servlet:
+   # encoding:
+    #  charset: UTF-8
+     # enabled: true
+      #force: true
+#  error:
+#    whitelabel:
+#      enabled: false
+#    path: /error
+
+mybatis:
+  mapper-locations: classpath:mapper/**/*.xml
+  type-aliases-package: com.nol.webcurd
+  configuration:
+    map-underscore-to-camel-case: true
+
